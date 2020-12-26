@@ -1,0 +1,43 @@
+server:
+  port: 5555
+
+spring:
+  application:
+    name: bloggateway
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+# Increase the Hystrix timeout to 60s (globally)
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
+ribbon:
+  ConnectTimeout: 1000
+  ReadTimeout: 3000
+  MaxAutoRetries: 1
+  MaxAutoRetriesNextServer: 1
+  OkToRetryOnAllOperations: true
+  retryableStatusCodes: 404, 500
+
+zuul:
+  ignored-services: "*"
+  prefix: /api
+  routes:
+    statisticservice: /statistic/**
+    bonusservice: /bonus/**
+  retryable: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: routes
