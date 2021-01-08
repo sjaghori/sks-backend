@@ -32,6 +32,7 @@ zuul:
   ignored-services: "*"
   prefix: /api
   routes:
+    blogservice: /blog/**
     statisticservice: /statistic/**
     bonusservice: /bonus/**
   retryable: true
