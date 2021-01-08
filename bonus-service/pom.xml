@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>at.technikumwien</groupId>
-    <artifactId>blog-service</artifactId>
+    <artifactId>bonus-service</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>blog-service</name>
+    <name>bonus-service</name>
 
     <properties>
         <java.version>11</java.version>
@@ -131,5 +131,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

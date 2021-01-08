@@ -3,16 +3,16 @@ server:
 
 spring:
   application:
-    name: statisticservice
+    name: bonusservice
 
   datasource:
     url: jdbc:mysql://localhost:3306/db_blog?serverTimezone=Europe/Vienna
     username: root
-#    password: admin
+  #    password: admin
   jpa:
     generate-ddl: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: create-drop
       naming:
         implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
@@ -24,7 +24,7 @@ spring:
         input:
           destination: blog.articles
           content-type: application/json
-          group: blog.articles.statisticgroup
+          group: blog.articles.bonusgroup
       kafka:
         binder:
           brokers: localhost:9092
@@ -36,6 +36,3 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${random.value}
     prefer-ip-address: true
-
-message:
-  public: Hello World!
