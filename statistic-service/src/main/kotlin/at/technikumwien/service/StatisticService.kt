@@ -14,20 +14,10 @@ class StatisticService(
     @StreamListener(Sink.INPUT)
     fun process(topicData: Article) {
         try {
-            val existingStatistic = statisticRepository.findDistinctTopBySightIdOrderByCounterDesc(topicData.sight.id)
-
-            val statisticSaved = if (existingStatistic?.counter == null) {
-                Statistic(topicData.sight.id, topicData.sight.name, 1)
-            } else {
-                Statistic(existingStatistic.id,
-                    existingStatistic.sightId,
-                    existingStatistic.sightName,
-                    existingStatistic.counter!! + 1)
-            }
-
+            // create an entry
+            val statisticSaved = Statistic(topicData.sight.id, topicData.sight.name)
             statisticRepository.save(statisticSaved)
 
-            println(statisticRepository.selectMostVisited())
         } catch (e: Exception) {
             println(e.message)
         }

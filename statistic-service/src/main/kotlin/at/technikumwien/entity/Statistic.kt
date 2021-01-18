@@ -13,38 +13,27 @@ data class Statistic(
     val sightId: Long,
     @Column(name = "sight_name")
     val sightName: String,
-
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    var counter: Long?,
+    @Transient
+    var counter: Long? = null,
 ) {
-
-    @Column(name = "first_visit", insertable = true, updatable = false)
-    lateinit var firstVisit: LocalDateTime
-
-    @Column(name = "last_visit")
-    lateinit var lastVisit: LocalDateTime
+    @Column(name = "visited_at", insertable = true, updatable = false)
+    var visitedAt: LocalDateTime? = null
 
     @PrePersist
     fun onCreate() {
-        this.firstVisit = LocalDateTime.now()
-        this.lastVisit = LocalDateTime.now()
+        this.visitedAt = LocalDateTime.now()
     }
 
-    @PreUpdate
-    fun onUpdate() {
-        this.lastVisit = LocalDateTime.now()
-    }
-
-    constructor(sightId: Long, sightName: String, counter: Long?) : this(null,
-        sightId = sightId,
-        sightName = sightName,
-        counter = counter)
+    // No args constructor
+    constructor() : this(null, -1L, "")
 
     constructor(sightId: Long, sightName: String) : this(null,
         sightId = sightId,
-        sightName = sightName,
-        counter = null)
+        sightName = sightName
+    )
 
-    // No args constructor
-    constructor() : this(null, -1L, "", null)
+    constructor(id: Long?, sightId: Long, sightName: String, counter: Long?, visitedAt: LocalDateTime?) :
+            this(id, sightId, sightName, counter) {
+        this.visitedAt = visitedAt
+    }
 }

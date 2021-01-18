@@ -1,0 +1,1345 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2640</x>
+      <y>1110</y>
+      <w>348</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>fg=#FF0000
+lt=&lt;&lt;&lt;-
+*send message to topic*</panel_attributes>
+    <additional_attributes>560.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>2922</x>
+      <y>1224</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=3
+symbol=component
+Kafka Binder</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>2502</x>
+      <y>1062</y>
+      <w>162</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>
+&lt;&lt;producer&gt;&gt;
+NewsletterProducer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>1848</x>
+      <y>144</y>
+      <w>162</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>group=2
+&lt;&lt;system&gt;&gt;
+Kafka</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>2514</x>
+      <y>1104</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=4
+symbol=component
+Kafka Binder</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>2514</x>
+      <y>1152</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=4
+&lt;&lt;config file&gt;&gt;
+bootstrap.yml</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2394</x>
+      <y>1164</y>
+      <w>132</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>group=4
+lt=.</panel_attributes>
+    <additional_attributes>200.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1914</x>
+      <y>234</y>
+      <w>30</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>group=2
+lt=[9092]-
+</panel_attributes>
+    <additional_attributes>20.0;10.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>1848</x>
+      <y>36</y>
+      <w>162</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>group=2
+&lt;&lt;system&gt;&gt;
+Zookeeper</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1914</x>
+      <y>72</y>
+      <w>30</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>group=2
+lt=[2181]-
+</panel_attributes>
+    <additional_attributes>20.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1782</x>
+      <y>54</y>
+      <w>78</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>group=2</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1656</x>
+      <y>30</y>
+      <w>132</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>group=2
+customelement=
+// Text Elemnt
+// DB Symbol
+drawArc(0,0,width,height*2/5,0,180,true) fg=black bg=#222222 //Parameters (x, y, width, height, start, extent, open)
+drawArc(0,0,width,height*2/5,180,180,true) fg=black //Parameters (x, y, width, height, start, extent, open)
+drawRectangle(0,(height+0.5)/5,width,(height)*3/5-1) fg=#929292 bg=#222222 //Parameters (x, y, width, height)
+drawLine(0,height/5,0,height*4/5)fg=black //Parameters (x1, y1, x2, y2) 
+drawLine(width,height/5,width,height*4/5)fg=black //Parameters (x1, y1, x2, y2) 
+drawArc(0,height*3/5,width,height*2/5,180,180,true) fg=black bg=#222222 //Parameters (x, y, width, height, start, extent, open)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1920</x>
+      <y>84</y>
+      <w>18</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>group=2</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1110</x>
+      <y>306</y>
+      <w>30</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>
+lt=[5555]-</panel_attributes>
+    <additional_attributes>20.0;10.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>516</x>
+      <y>648</y>
+      <w>162</w>
+      <h>258</h>
+    </coordinates>
+    <panel_attributes>group=10
+&lt;&lt;system&gt;&gt;
+ConfigServer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>2514</x>
+      <y>1314</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>
+symbol=artifact
+db_newsletter</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>2010</x>
+      <y>930</y>
+      <w>132</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>
+customelement=
+// Text Elemnt
+// DB Symbol
+drawArc(0,0,width,height*2/5,0,180,true) fg=black bg=#222222 //Parameters (x, y, width, height, start, extent, open)
+drawArc(0,0,width,height*2/5,180,180,true) fg=black //Parameters (x, y, width, height, start, extent, open)
+drawRectangle(0,(height+0.5)/5,width,(height)*3/5-1) fg=#929292 bg=#222222 //Parameters (x, y, width, height)
+drawLine(0,height/5,0,height*4/5)fg=black //Parameters (x1, y1, x2, y2) 
+drawLine(width,height/5,width,height*4/5)fg=black //Parameters (x1, y1, x2, y2) 
+drawArc(0,height*3/5,width,height*2/5,180,180,true) fg=black bg=#222222 //Parameters (x, y, width, height, start, extent, open)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2388</x>
+      <y>1320</y>
+      <w>138</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>group=4
+lt=&lt;.
+&lt;&lt;stores&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2574</x>
+      <y>1200</y>
+      <w>18</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>group=4</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2034</x>
+      <y>330</y>
+      <w>84</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>
+Article
+--
+-id: Long?
+-title: String,
+-description: String,
+-image: String,
+-content: String,
+-sight: Sight,
+-author: Author,
+--
+...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1860</x>
+      <y>186</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=2
+&lt;&lt;topic&gt;&gt;
+blog.articles</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2568</x>
+      <y>1056</y>
+      <w>30</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>group=4
+lt=[8080]-
+</panel_attributes>
+    <additional_attributes>20.0;10.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>2922</x>
+      <y>1272</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=3
+&lt;&lt;config file&gt;&gt;
+application.yml</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2982</x>
+      <y>1302</y>
+      <w>18</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>group=3
+lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>2910</x>
+      <y>1176</y>
+      <w>162</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>group=3
+&lt;&lt;consumer&gt;&gt;
+NewsletterConsumer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2064</x>
+      <y>156</y>
+      <w>234</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>group=2
+topicData
+--
+-timestamp: long
+-eventType: EventType
+-reader: Reader
+--
+_+forCreated(reader: Reader): ReaderEvent_
+_+forDeleted(reader: Reader): ReaderEvent_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1986</x>
+      <y>192</y>
+      <w>90</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>group=2
+lt=&lt;.
+&lt;&lt;stores&gt;&gt;</panel_attributes>
+    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1782</x>
+      <y>186</y>
+      <w>78</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>group=2</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1656</x>
+      <y>162</y>
+      <w>132</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>group=2
+customelement=
+// Text Elemnt
+// DB Symbol
+drawArc(0,0,width,height*2/5,0,180,true) fg=black bg=#222222 //Parameters (x, y, width, height, start, extent, open)
+drawArc(0,0,width,height*2/5,180,180,true) fg=black //Parameters (x, y, width, height, start, extent, open)
+drawRectangle(0,(height+0.5)/5,width,(height)*3/5-1) fg=#929292 bg=#222222 //Parameters (x, y, width, height)
+drawLine(0,height/5,0,height*4/5)fg=black //Parameters (x1, y1, x2, y2) 
+drawLine(width,height/5,width,height*4/5)fg=black //Parameters (x1, y1, x2, y2) 
+drawArc(0,height*3/5,width,height*2/5,180,180,true) fg=black bg=#222222 //Parameters (x, y, width, height, start, extent, open)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2868</x>
+      <y>1062</y>
+      <w>144</w>
+      <h>174</h>
+    </coordinates>
+    <panel_attributes>fg=#FF0000
+lt=&lt;&lt;&lt;-&gt;&gt;&gt;
+*subscribe to topic*
+              &amp;
+* receive message*
+
+
+
+</panel_attributes>
+    <additional_attributes>10.0;10.0;200.0;270.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>1104</x>
+      <y>12</y>
+      <w>36</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>group=69
+User</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1116</x>
+      <y>66</y>
+      <w>78</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>group=69
+fg=#FF0000
+lt=&lt;&lt;&lt;-
+*post form data*</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>0</x>
+      <y>1800</y>
+      <w>366</w>
+      <h>378</h>
+    </coordinates>
+    <panel_attributes>group=10
+bg=#b0c9f5
+# blogservice.yml
+server:
+  port: 0   # uses random port
+
+spring:
+  application:
+    name: blogservice
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_blog?serverTimezone=Europe/Vienna
+    username: root
+  #    password: admin
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: blog.articles
+          content-type: application/json
+      kafka:
+        binder:
+          brokers: localhost:9092
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka   # disables peer replication
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
+    prefer-ip-address: true</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>0</x>
+      <y>528</y>
+      <w>204</w>
+      <h>444</h>
+    </coordinates>
+    <panel_attributes>group=10
+bg=#b0c9f5
+# bloggateway.yml
+server:
+  port: 5555
+
+spring:
+  application:
+    name: bloggateway
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+# Increase the Hystrix timeout to 60s (globally)
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
+ribbon:
+  ConnectTimeout: 1000
+  ReadTimeout: 3000
+  MaxAutoRetries: 1
+  MaxAutoRetriesNextServer: 1
+  OkToRetryOnAllOperations: true
+  retryableStatusCodes: 404, 500
+
+zuul:
+  ignored-services: "*"
+  prefix: /api
+  routes:
+    blogservice: /blog/**
+    statisticservice: /statistic/**
+    bonusservice: /bonus/**
+  retryable: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: routes</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>0</x>
+      <y>366</y>
+      <w>276</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>group=10
+bg=#b0c9f5
+# blogregistry.yml
+server:
+  port: 8761
+  application:
+    name: blogregistry
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka   # disables peer replication
+  server:
+    use-read-only-response-cache: false</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>0</x>
+      <y>1374</y>
+      <w>366</w>
+      <h>420</h>
+    </coordinates>
+    <panel_attributes>group=10
+bg=#b0c9f5
+# statisticservice.yml
+server:
+  port: 0   # uses random port
+
+spring:
+  application:
+    name: statisticservice
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_blog?serverTimezone=Europe/Vienna
+    username: root
+#    password: admin
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: blog.articles
+          content-type: application/json
+          group: blog.articles.statisticgroup
+      kafka:
+        binder:
+          brokers: localhost:9092
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka   # disables peer replication
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
+    prefer-ip-address: true
+
+message:
+  public: Hello World!</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>0</x>
+      <y>978</y>
+      <w>366</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>group=10
+bg=#b0c9f5
+# bonusservice.yml
+server:
+  port: 0   # uses random port
+
+spring:
+  application:
+    name: bonusservice
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_blog?serverTimezone=Europe/Vienna
+    username: root
+  #    password: admin
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: false
+
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: blog.articles
+          content-type: application/json
+          group: blog.articles.bonusgroup
+      kafka:
+        binder:
+          brokers: localhost:9092
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka   # disables peer replication
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
+    prefer-ip-address: true</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>528</x>
+      <y>858</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=10
+symbol=artifact
+blogservice.yml</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>528</x>
+      <y>816</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=10
+symbol=artifact
+statisticservice.yml</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>528</x>
+      <y>774</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=10
+symbol=artifact
+bonusservice.yml</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>528</x>
+      <y>732</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=10
+symbol=artifact
+bloggateway.yml</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>528</x>
+      <y>690</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=10
+symbol=artifact
+blogregistry.yml</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>444</y>
+      <w>270</w>
+      <h>282</h>
+    </coordinates>
+    <panel_attributes>group=10
+lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;270.0;10.0;270.0;450.0;430.0;450.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>198</x>
+      <y>738</y>
+      <w>342</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>group=10
+lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;550.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>792</y>
+      <w>180</w>
+      <h>402</h>
+    </coordinates>
+    <panel_attributes>group=10
+lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;650.0;120.0;650.0;120.0;10.0;280.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>828</y>
+      <w>180</w>
+      <h>738</h>
+    </coordinates>
+    <panel_attributes>group=10
+lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;1210.0;160.0;1210.0;160.0;10.0;280.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>870</y>
+      <w>180</w>
+      <h>1170</h>
+    </coordinates>
+    <panel_attributes>group=10
+lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;1930.0;200.0;1930.0;210.0;10.0;280.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>1044</x>
+      <y>312</y>
+      <w>162</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>group=69
+&lt;&lt;producer&gt;&gt;
+BlogGateway</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>1044</x>
+      <y>132</y>
+      <w>162</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>group=69
+&lt;&lt;client&gt;&gt;
+BlogClient</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1116</x>
+      <y>180</y>
+      <w>270</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>group=69
+lt=&lt;&lt;-
+*call service via gateway*
+(f.e. http://localhost:5555/api/blog/resources/blogs)
+(f.e. http://localhost:5555/api/blog/resources/blogs/2)
+(f.e. http://localhost:5555/api/statistic/resources/statistics)
+(f.e. http://localhost:5555/api/statistic/resources/statistics/last_month)</panel_attributes>
+    <additional_attributes>10.0;210.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1056</x>
+      <y>348</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=69
+symbol=component
+Zuul</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1056</x>
+      <y>390</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=69
+symbol=component
+Ribbon</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1056</x>
+      <y>432</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=69
+symbol=component
+Eureka Client</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1056</x>
+      <y>474</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=69
+&lt;&lt;config file&gt;&gt;
+bootstrap.yml</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>924</x>
+      <y>474</y>
+      <w>114</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>group=69
+bg=blue
+spring:
+  application:
+    name: bloggateway
+  profiles:
+    active: default
+  cloud:
+    config:
+      uri: http://localhost:8888</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1032</x>
+      <y>504</y>
+      <w>102</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>group=69
+lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;60.0;150.0;60.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>1230</x>
+      <y>654</y>
+      <w>162</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>group=70
+&lt;&lt;registry&gt;&gt;
+BlogRegistry</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1242</x>
+      <y>696</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=70
+symbol=component
+Eureka Server</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1242</x>
+      <y>738</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=70
+&lt;&lt;config file&gt;&gt;
+bootstrap.yml</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1740</x>
+      <y>444</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>
+symbol=artifact
+db_blog</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1296</x>
+      <y>648</y>
+      <w>30</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>group=70
+lt=[8761]-</panel_attributes>
+    <additional_attributes>20.0;10.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>972</x>
+      <y>894</y>
+      <w>30</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>
+lt=[8761]-</panel_attributes>
+    <additional_attributes>20.0;10.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1002</x>
+      <y>894</y>
+      <w>30</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>
+lt=[8761]-</panel_attributes>
+    <additional_attributes>20.0;10.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1740</x>
+      <y>402</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=71
+symbol=component
+Kafka Binder</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1032</x>
+      <y>894</y>
+      <w>30</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>
+lt=[8761]-</panel_attributes>
+    <additional_attributes>20.0;10.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1740</x>
+      <y>360</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=71
+symbol=component
+Eureka Client
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1740</x>
+      <y>486</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=71
+&lt;&lt;config file&gt;&gt;
+bootstrap.yml
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1788</x>
+      <y>312</y>
+      <w>42</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=[random]-
+group=71</panel_attributes>
+    <additional_attributes>30.0;10.0;30.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>1728</x>
+      <y>318</y>
+      <w>162</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>group=71
+&lt;&lt;service&gt;&gt;
+BlogService
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1740</x>
+      <y>600</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=72
+symbol=component
+Eureka Client
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1740</x>
+      <y>726</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=72
+&lt;&lt;config file&gt;&gt;
+bootstrap.yml
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1788</x>
+      <y>552</y>
+      <w>42</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=[random]-
+group=72</panel_attributes>
+    <additional_attributes>30.0;10.0;30.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>1728</x>
+      <y>558</y>
+      <w>162</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>group=72
+&lt;&lt;service&gt;&gt;
+BonusService
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1740</x>
+      <y>834</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=73
+symbol=component
+Eureka Client
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1740</x>
+      <y>960</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=73
+&lt;&lt;config file&gt;&gt;
+bootstrap.yml
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1788</x>
+      <y>786</y>
+      <w>42</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=[random]-
+group=73</panel_attributes>
+    <additional_attributes>30.0;10.0;30.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>1728</x>
+      <y>792</y>
+      <w>162</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>group=73
+&lt;&lt;service&gt;&gt;
+StatisticService
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1740</x>
+      <y>876</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=73
+symbol=component
+Kafka Binder</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1740</x>
+      <y>642</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=72
+symbol=component
+Kafka Binder</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2034</x>
+      <y>444</y>
+      <w>84</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>
+Sight
+--
+-id: Long?
+-name: String?
+-address: String?
+-location: Location?
+--
+...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2154</x>
+      <y>444</y>
+      <w>84</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>
+Location
+--
+-id: Long?
+-latitude: Double
+-longitude: Double
+--
+...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2166</x>
+      <y>348</y>
+      <w>84</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>
+Author
+--
+-id: Long?
+-firstName: String?
+-lastName: String?
+--
+...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2112</x>
+      <y>372</y>
+      <w>66</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;90.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2112</x>
+      <y>462</y>
+      <w>54</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;70.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1740</x>
+      <y>684</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=72
+symbol=artifact
+db_blog</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1740</x>
+      <y>918</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>group=73
+symbol=artifact
+db_blog</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

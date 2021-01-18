@@ -58,8 +58,8 @@ class DBInitializer(private val articleRepository: ArticleRepository) {
                             Location(48.22961928657541, 15.333504798094802)
                         ),
                         Author(
-                            "Sasan",
-                            "Jaghori",
+                            "Elon",
+                            "Musk",
                         )
                     ),
                     Article(
