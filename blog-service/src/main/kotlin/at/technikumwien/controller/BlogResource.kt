@@ -28,7 +28,7 @@ class BlogResource(
 ) {
     @GetMapping
     fun retrieveAllArticles(): String? {
-        return jacksonObjectWriter("articles", articleRepository.findAll())
+        return jacksonObjectWriter(articleRepository.findAll())
     }
 
     @GetMapping(value = ["/{id}"])
@@ -38,7 +38,7 @@ class BlogResource(
 
             source.output().send(message(article))
 
-            return jacksonObjectWriter("article", article)
+            return jacksonObjectWriter(article)
         } catch (ex: DataRetrievalFailureException) {
             throw ResponseStatusException(HttpStatus.NOT_FOUND, "Article Not Found")
         }
@@ -65,9 +65,9 @@ class BlogResource(
         return MessageBuilder.withPayload(payload).build()
     }
 
-    private fun <T> jacksonObjectWriter(rootName: String, entity: T): String? {
+    private fun <T> jacksonObjectWriter(entity: T): String? {
         val mapper = JsonMapper.builder().addModule(KotlinModule()).build()
-        val writer = mapper.writer().withRootName(rootName)
+        val writer = mapper.writer()
         return writer.writeValueAsString(entity)
     }
 }

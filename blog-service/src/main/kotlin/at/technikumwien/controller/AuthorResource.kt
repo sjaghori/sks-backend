@@ -19,22 +19,22 @@ class AuthorResource(
 ) {
     @GetMapping
     fun retrieveAllAuthors(): String? {
-        return jacksonObjectWriter("authors", authorRepository.findAll())
+        return jacksonObjectWriter(authorRepository.findAll())
     }
 
     @GetMapping(value = ["/{id}"])
     fun getAuthorByID(@PathVariable id: Long, response: HttpServletResponse): String? {
         try {
             val author = authorRepository.getOne(id)
-            return jacksonObjectWriter("author", author)
+            return jacksonObjectWriter(author)
         } catch (ex: DataRetrievalFailureException) {
             throw ResponseStatusException(HttpStatus.NOT_FOUND, "Author Not Found")
         }
     }
 
-    private fun <T> jacksonObjectWriter(rootName: String, entity: T): String? {
+    private fun <T> jacksonObjectWriter(entity: T): String? {
         val mapper = JsonMapper.builder().addModule(KotlinModule()).build()
-        val writer = mapper.writer().withRootName(rootName)
+        val writer = mapper.writer()
         return writer.writeValueAsString(entity)
     }
 }

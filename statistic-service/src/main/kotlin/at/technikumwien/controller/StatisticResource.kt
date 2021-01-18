@@ -13,20 +13,20 @@ import java.time.LocalDateTime
 class StatisticResource(val statisticRepository: StatisticRepository) {
     @GetMapping
     fun retrieveAllStatistics(): String? {
-        return jacksonObjectWriter("statistics", statisticRepository.selectMostVisited())
+        return jacksonObjectWriter(statisticRepository.selectMostVisited())
     }
 
     @GetMapping("/last_month")
-    fun getMonthlyStatistic(): String? = jacksonObjectWriter("statistics",
+    fun getMonthlyStatistic(): String? = jacksonObjectWriter(
         statisticRepository.selectMostVisitedBetween(
             LocalDateTime.now().minusMonths(2),
             LocalDateTime.now().minusMonths(1)
         )
     )
 
-    private fun <T> jacksonObjectWriter(rootName: String, entity: T): String? {
+    private fun <T> jacksonObjectWriter(entity: T): String? {
         val mapper = JsonMapper.builder().addModule(KotlinModule()).build()
-        val writer = mapper.writer().withRootName(rootName)
+        val writer = mapper.writer()
         return writer.writeValueAsString(entity)
     }
 }
