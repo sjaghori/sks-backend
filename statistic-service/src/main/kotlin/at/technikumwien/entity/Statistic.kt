@@ -32,6 +32,11 @@ data class Statistic(
         sightName = sightName
     )
 
+    constructor(sightId: Long, sightName: String, visitedAt: LocalDateTime?) :
+            this(sightId, sightName) {
+        this.visitedAt = visitedAt
+    }
+
     constructor(id: Long?, sightId: Long, sightName: String, counter: Long?, visitedAt: LocalDateTime?) :
             this(id, sightId, sightName, counter) {
         this.visitedAt = visitedAt
